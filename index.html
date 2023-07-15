@@ -39,10 +39,16 @@
     <p>Primo Lucas ama você! <3 <3 <3 </p>
     <img src="alana.jpg" alt="Foto da Alana">
     
-    <audio controls autoplay>
+    <audio id="audioPlayer" controls>
         <source src="Xuxa - Parabéns da Xuxa (Álbum Xou da Xuxa) [Áudio Oficial] (128 kbps).mp3" type="audio/mpeg">
         Seu navegador não suporta a reprodução de áudio.
     </audio>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('audioPlayer');
+            audio.play();
+        });
+    </script>
 </body>
 </html>
-
